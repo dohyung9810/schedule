@@ -17,7 +17,7 @@ col_input_left, col_input_right = st.columns(2)
 
 with col_input_left:
     daily_hours = st.number_input(
-        "1일 근무시간 (휴게시간 공제한 실근무시간, 시간)",
+        "1일 근무시간",
         min_value=0.0,
         max_value=24.0,
         value=8.0,
@@ -209,3 +209,4 @@ with col_f2:
         "https://www.yesform.com"
     )
     st.caption("예스폼 메인 페이지로 이동하여 직접 필요한 서식을 검색하세요.")
+
