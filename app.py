@@ -70,9 +70,9 @@ over_8_daily = daily_hours > 8
 
 # 휴게시간 안내 (입력값은 휴게 공제 후 실근무시간이라는 전제)
 if daily_hours >= 8:
-    break_info = "하루 총 근무가 8시간 이상이라면, 휴게시간 1시간 이상 부여 필요 (입력값은 휴게 공제 후 실근무시간 기준)"
+    break_info = "하루 총 근무가 8시간 이상이라면, 휴게시간 1시간 이상 부여 필요"
 elif daily_hours >= 4:
-    break_info = "하루 총 근무가 4시간 이상이라면, 휴게시간 30분 이상 부여 필요 (입력값은 휴게 공제 후 실근무시간 기준)"
+    break_info = "하루 총 근무가 4시간 이상이라면, 휴게시간 30분 이상 부여 필요"
 elif daily_hours > 0:
     break_info = "4시간 미만 근로: 법정 휴게시간 의무 없음"
 else:
@@ -209,4 +209,5 @@ with col_f2:
         "https://www.yesform.com"
     )
     st.caption("예스폼 메인 페이지로 이동하여 직접 필요한 서식을 검색하세요.")
+
 
